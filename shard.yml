@@ -1,0 +1,9 @@
+name: crystal-stix2
+version: 0.1.0
+
+authors:
+  - Oleksii Morozov <oleksii.morozov@gmail.com>
+
+crystal: 0.31.1
+
+license: MIT

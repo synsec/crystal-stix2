@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.30.1">
+
+
+<link href="../../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../../";
+</script>
+
+  <meta id="repository-name" content="github.com/synsec/crystal-stix2">
+  <title>STIX2::Properties::KillChainPhasesProperty - github.com/synsec/crystal-stix2</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/Array" data-name="array(t)">
+      <a href="../../Array.html">Array</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/OV" data-name="ov">
+      <a href="../../OV.html">OV</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/synsec/crystal-stix2/STIX2" data-name="stix2">
+      <a href="../../STIX2.html">STIX2</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/AttackPattern" data-name="stix2::attackpattern">
+      <a href="../../STIX2/AttackPattern.html">AttackPattern</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Bundle" data-name="stix2::bundle">
+      <a href="../../STIX2/Bundle.html">Bundle</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Constants" data-name="stix2::constants">
+      <a href="../../STIX2/Constants.html">Constants</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/DomainName" data-name="stix2::domainname">
+      <a href="../../STIX2/DomainName.html">DomainName</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/ExternalReference" data-name="stix2::externalreference">
+      <a href="../../STIX2/ExternalReference.html">ExternalReference</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/GranularMarking" data-name="stix2::granularmarking">
+      <a href="../../STIX2/GranularMarking.html">GranularMarking</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Identity" data-name="stix2::identity">
+      <a href="../../STIX2/Identity.html">Identity</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Indicator" data-name="stix2::indicator">
+      <a href="../../STIX2/Indicator.html">Indicator</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Infrastructure" data-name="stix2::infrastructure">
+      <a href="../../STIX2/Infrastructure.html">Infrastructure</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/IPv4Addr" data-name="stix2::ipv4addr">
+      <a href="../../STIX2/IPv4Addr.html">IPv4Addr</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/KillChainPhase" data-name="stix2::killchainphase">
+      <a href="../../STIX2/KillChainPhase.html">KillChainPhase</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/synsec/crystal-stix2/STIX2/Macro" data-name="stix2::macro">
+      <a href="../../STIX2/Macro.html">Macro</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Macro/CreateMethods" data-name="stix2::macro::createmethods">
+      <a href="../../STIX2/Macro/CreateMethods.html">CreateMethods</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Malware" data-name="stix2::malware">
+      <a href="../../STIX2/Malware.html">Malware</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/synsec/crystal-stix2/STIX2/Properties" data-name="stix2::properties">
+      <a href="../../STIX2/Properties.html">Properties</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/AliasesProperty" data-name="stix2::properties::aliasesproperty">
+      <a href="../../STIX2/Properties/AliasesProperty.html">AliasesProperty</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/BasicCommonObjectProperties" data-name="stix2::properties::basiccommonobjectproperties">
+      <a href="../../STIX2/Properties/BasicCommonObjectProperties.html">BasicCommonObjectProperties</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/CommonObjectProperties" data-name="stix2::properties::commonobjectproperties">
+      <a href="../../STIX2/Properties/CommonObjectProperties.html">CommonObjectProperties</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/CreatedModifiedProperty" data-name="stix2::properties::createdmodifiedproperty">
+      <a href="../../STIX2/Properties/CreatedModifiedProperty.html">CreatedModifiedProperty</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/DescriptionProperty" data-name="stix2::properties::descriptionproperty">
+      <a href="../../STIX2/Properties/DescriptionProperty.html">DescriptionProperty</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/ExternalReferencesProperty" data-name="stix2::properties::externalreferencesproperty">
+      <a href="../../STIX2/Properties/ExternalReferencesProperty.html">ExternalReferencesProperty</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/IDProperty" data-name="stix2::properties::idproperty">
+      <a href="../../STIX2/Properties/IDProperty.html">IDProperty</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/synsec/crystal-stix2/STIX2/Properties/KillChainPhasesProperty" data-name="stix2::properties::killchainphasesproperty">
+      <a href="../../STIX2/Properties/KillChainPhasesProperty.html">KillChainPhasesProperty</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/LabelsProperty" data-name="stix2::properties::labelsproperty">
+      <a href="../../STIX2/Properties/LabelsProperty.html">LabelsProperty</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/LangProperty" data-name="stix2::properties::langproperty">
+      <a href="../../STIX2/Properties/LangProperty.html">LangProperty</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/MarkingProperty" data-name="stix2::properties::markingproperty">
+      <a href="../../STIX2/Properties/MarkingProperty.html">MarkingProperty</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/NameProperty" data-name="stix2::properties::nameproperty">
+      <a href="../../STIX2/Properties/NameProperty.html">NameProperty</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/SCOCommonObjectProperties" data-name="stix2::properties::scocommonobjectproperties">
+      <a href="../../STIX2/Properties/SCOCommonObjectProperties.html">SCOCommonObjectProperties</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/SeenProperties" data-name="stix2::properties::seenproperties">
+      <a href="../../STIX2/Properties/SeenProperties.html">SeenProperties</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/TypeProperty" data-name="stix2::properties::typeproperty">
+      <a href="../../STIX2/Properties/TypeProperty.html">TypeProperty</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/ValueProperty" data-name="stix2::properties::valueproperty">
+      <a href="../../STIX2/Properties/ValueProperty.html">ValueProperty</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Relationship" data-name="stix2::relationship">
+      <a href="../../STIX2/Relationship.html">Relationship</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/synsec/crystal-stix2/STIX2/Type" data-name="stix2::type">
+      <a href="../../STIX2/Type.html">Type</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Type/BundleObjects" data-name="stix2::type::bundleobjects">
+      <a href="../../STIX2/Type/BundleObjects.html">BundleObjects</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Type/Dictionary" data-name="stix2::type::dictionary">
+      <a href="../../STIX2/Type/Dictionary.html">Dictionary</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Type/DictionaryItem" data-name="stix2::type::dictionaryitem">
+      <a href="../../STIX2/Type/DictionaryItem.html">DictionaryItem</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Url" data-name="stix2::url">
+      <a href="../../STIX2/Url.html">Url</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> STIX2::Properties::KillChainPhasesProperty
+
+</h1>
+
+
+
+
+
+
+
+
+
+  <h2>Included Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type">JSON::Serializable</li>
+  
+    <li class="other-type"><a href="../../STIX2/Macro/CreateMethods.html">STIX2::Macro::CreateMethods</a></li>
+  
+  </ul>
+
+
+
+
+
+
+
+  <h2>Direct including types</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../../STIX2/AttackPattern.html">STIX2::AttackPattern</a></li>
+  
+    <li class="other-type"><a href="../../STIX2/Indicator.html">STIX2::Indicator</a></li>
+  
+    <li class="other-type"><a href="../../STIX2/Infrastructure.html">STIX2::Infrastructure</a></li>
+  
+    <li class="other-type"><a href="../../STIX2/Malware.html">STIX2::Malware</a></li>
+  
+  </ul>
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/properties/kill_chain_phases.cr#L5" target="_blank">
+        objects/properties/kill_chain_phases.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new(pull:JSON::PullParser)-class-method" class="signature"><strong>.new</strong>(pull : JSON::PullParser)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#kill_chain_phases-instance-method" class="signature"><strong>#kill_chain_phases</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kill_chain_phases=(kill_chain_phases:Array(STIX2::KillChainPhase)?)-instance-method" class="signature"><strong>#kill_chain_phases=</strong>(kill_chain_phases : Array(STIX2::KillChainPhase)?)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(pull:JSON::PullParser)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(pull : JSON::PullParser)
+
+        <a class="method-permalink" href="#new(pull:JSON::PullParser)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/properties/kill_chain_phases.cr#L6" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="kill_chain_phases-instance-method">
+      <div class="signature">
+        
+        def <strong>kill_chain_phases</strong>
+
+        <a class="method-permalink" href="#kill_chain_phases-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/properties/kill_chain_phases.cr#L11" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kill_chain_phases=(kill_chain_phases:Array(STIX2::KillChainPhase)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>kill_chain_phases=</strong>(kill_chain_phases : <a href="../../Array.html">Array</a>(<a href="../../STIX2/KillChainPhase.html">STIX2::KillChainPhase</a>)?)
+
+        <a class="method-permalink" href="#kill_chain_phases=(kill_chain_phases:Array(STIX2::KillChainPhase)?)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/properties/kill_chain_phases.cr#L11" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

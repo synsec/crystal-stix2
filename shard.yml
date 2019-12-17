@@ -1,5 +1,6 @@
 name: crystal-stix2
 version: 0.1.0
+description: crystal-stix2 is a STIX 2.1 implementation.
 
 authors:
   - Oleksii Morozov <oleksii.morozov@gmail.com>

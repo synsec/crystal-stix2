@@ -1,5 +1,7 @@
 # crystal-stix2
 
+![](https://github.com/synsec/crystal-stix2/workflows/Crystal%20CI/badge.svg?branch=master)
+
 crystal-stix2 is a STIX 2.1 implementation using Crystal language. This is a work in progress and API is likely to change.
 
 Structured Threat Information Expression (STIX) is a language for expressing cyber threat and observable information. This document defines concepts that apply across all of STIX and defines the overall structure of the STIX language.

@@ -13,6 +13,6 @@ module STIX2::Properties::BasicCommonObjectProperties
     @spec_version = STIX2::Constants::STIX_VERSION
     @object_type = object_type
 
-    new_ID(object_type)
+    new_id(object_type)
   end
 end

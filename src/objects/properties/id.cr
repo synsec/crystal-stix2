@@ -6,11 +6,11 @@ module STIX2::Properties::IDProperty
 
   getter id : String?
 
-  def new_ID(s : String)
-    @id = create_STIXUUID(s)
+  def new_id(s : String)
+    @id = create_stixuuid(s)
   end
 
-  private def create_STIXUUID(s : String) : String
+  private def create_stixuuid(s : String) : String
     "#{s}--#{UUID.random}"
   end
 end

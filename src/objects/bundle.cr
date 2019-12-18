@@ -23,7 +23,7 @@ class STIX2::Bundle
   def initialize
     object_type = "bundle"
     @object_type = object_type
-    new_ID object_type
+    new_id object_type
   end
 
   private def init_objects

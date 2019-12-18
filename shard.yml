@@ -7,4 +7,10 @@ authors:
 
 crystal: 0.31.1
 
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 0.11.0
+
 license: MIT
+

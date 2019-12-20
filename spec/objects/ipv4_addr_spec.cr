@@ -1,3 +1,5 @@
+require "../spec_helper"
+
 describe STIX2::IPv4Addr do
   obj = STIX2::IPv4Addr.new({
     value: "192.0.2.0",

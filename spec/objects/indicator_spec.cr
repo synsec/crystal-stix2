@@ -1,3 +1,5 @@
+require "../spec_helper"
+
 describe STIX2::Indicator do
   obj = STIX2::Indicator.new({
     indicator_types: ["anonymization"],
@@ -20,10 +22,10 @@ describe STIX2::Indicator do
   describe "Required Common Properties" do
     it "Should have correct created and modified" do
       obj.created.should_not be_nil
-      obj.created.to_s.should_not be_empty
+      obj.created.should_not be_empty
 
       obj.modified.should_not be_nil
-      obj.modified.to_s.should_not be_empty
+      obj.modified.should_not be_empty
     end
 
     it "Should have correct spec_version" do

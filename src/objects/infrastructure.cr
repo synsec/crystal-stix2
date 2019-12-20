@@ -1,14 +1,12 @@
-require "json"
-require "./properties/common_object_properties"
+
+require "./properties/common"
 require "./properties/description"
 require "./properties/kill_chain_phases"
 require "./properties/aliases"
 require "./properties/seen"
 require "../macro/create_methods"
 
-class STIX2::Infrastructure
-  include JSON::Serializable
-  include STIX2::Properties::CommonObjectProperties
+class STIX2::Infrastructure < STIX2::Properties::Common
   include STIX2::Properties::DescriptionProperty
   include STIX2::Properties::KillChainPhasesProperty
   include STIX2::Properties::AliasesProperty
@@ -19,13 +17,13 @@ class STIX2::Infrastructure
   setter infrastructure_types : Array(String)
 
   def initialize(@name : String, @infrastructure_types : Array(String))
-    init_object("infrastructure")
+    super("infrastructure")
   end
 
   def initialize(args : NamedTuple(name: String, infrastructure_types: Array(String)))
     @name = args[:name]
     @infrastructure_types = args[:infrastructure_types]
-    init_object("infrastructure")
+    super("infrastructure")
   end
 
   define_add_methods infrastructure_types

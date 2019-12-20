@@ -1,22 +1,19 @@
-require "json"
-require "./properties/basic_common_object_properties"
+require "./properties/basic_common"
 require "./properties/sco_common_object_properties"
 require "./properties/markings"
 
-class STIX2::Url
-  include JSON::Serializable
-  include STIX2::Properties::BasicCommonObjectProperties
+class STIX2::Url < STIX2::Properties::BasicCommon
   include STIX2::Properties::SCOCommonObjectProperties
   include STIX2::Properties::MarkingProperty
 
   property value : String
 
   def initialize(@value : String)
-    init_basic_object("url")
+    super("url")
   end
 
   def initialize(args : NamedTuple(value: String))
     @value = args[:value]
-    init_basic_object("url")
+    super("url")
   end
 end

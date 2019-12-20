@@ -1,12 +1,9 @@
-require "json"
-require "./properties/common_object_properties"
+require "./properties/common"
 require "./properties/name"
 require "./properties/description"
 require "../macro/create_methods"
 
-class STIX2::Identity
-  include JSON::Serializable
-  include STIX2::Properties::CommonObjectProperties
+class STIX2::Identity < STIX2::Properties::Common
   include STIX2::Properties::DescriptionProperty
   include STIX2::Macro::CreateMethods
 
@@ -17,13 +14,13 @@ class STIX2::Identity
   setter roles : Array(String)?
 
   def initialize(@name : String, @identity_class : String)
-    init_object("identity")
+    super("identity")
   end
 
   def initialize(args : NamedTuple(name: String, identity_class: String))
     @name = args[:name]
     @identity_class = args[:identity_class]
-    init_object("identity")
+    super("identity")
   end
 
   define_add_methods sectors

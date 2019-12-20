@@ -1,9 +1,7 @@
-require "json"
 require "../granular_marking"
 require "../../macro/create_methods"
 
 module STIX2::Properties::MarkingProperty
-  include JSON::Serializable
   include STIX2::Macro::CreateMethods
 
   setter object_marking_refs : Array(String)?

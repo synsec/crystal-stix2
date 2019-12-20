@@ -1,10 +1,7 @@
-require "json"
-require "./properties/common_object_properties"
+require "./properties/common"
 require "./properties/description"
 
-class STIX2::Relationship
-  include JSON::Serializable
-  include STIX2::Properties::CommonObjectProperties
+class STIX2::Relationship < STIX2::Properties::Common
   include STIX2::Properties::DescriptionProperty
 
   property relationship_type : String
@@ -14,7 +11,7 @@ class STIX2::Relationship
   property stop_time : String?
 
   def initialize(@relationship_type : String, @source_ref : String, @target_ref : String)
-    init_object("relationship")
+    super("relationship")
   end
 
   def initialize(args : NamedTuple(relationship_type: String, source_ref: String, target_ref: String))
@@ -22,6 +19,6 @@ class STIX2::Relationship
     @source_ref = args[:source_ref]
     @target_ref = args[:target_ref]
 
-    init_object("relationship")
+    super("relationship")
   end
 end

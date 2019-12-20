@@ -1,3 +1,5 @@
+require "../spec_helper"
+
 describe STIX2::DomainName do
   obj = STIX2::DomainName.new({
     value: "example.com",

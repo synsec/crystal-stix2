@@ -1,3 +1,5 @@
+require "../spec_helper"
+
 describe STIX2::Url do
   obj = STIX2::Url.new({
     value: "http://example.com",

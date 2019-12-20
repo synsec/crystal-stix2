@@ -14,7 +14,7 @@
 </script>
 
   <meta id="repository-name" content="github.com/synsec/crystal-stix2">
-  <title>STIX2::Type::BundleObjects - github.com/synsec/crystal-stix2</title>
+  <title>STIX2::Properties::BasicCommon - github.com/synsec/crystal-stix2</title>
 </head>
 <body>
 
@@ -126,7 +126,7 @@
       
     </li>
   
-  <li class="parent " data-id="github.com/synsec/crystal-stix2/STIX2/Properties" data-name="stix2::properties">
+  <li class="parent open current" data-id="github.com/synsec/crystal-stix2/STIX2/Properties" data-name="stix2::properties">
       <a href="../../STIX2/Properties.html">Properties</a>
       
         <ul>
@@ -136,7 +136,7 @@
       
     </li>
   
-  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/BasicCommon" data-name="stix2::properties::basiccommon">
+  <li class=" current" data-id="github.com/synsec/crystal-stix2/STIX2/Properties/BasicCommon" data-name="stix2::properties::basiccommon">
       <a href="../../STIX2/Properties/BasicCommon.html">BasicCommon</a>
       
     </li>
@@ -211,12 +211,12 @@
       
     </li>
   
-  <li class="parent open current" data-id="github.com/synsec/crystal-stix2/STIX2/Type" data-name="stix2::type">
+  <li class="parent " data-id="github.com/synsec/crystal-stix2/STIX2/Type" data-name="stix2::type">
       <a href="../../STIX2/Type.html">Type</a>
       
         <ul>
   
-  <li class=" current" data-id="github.com/synsec/crystal-stix2/STIX2/Type/BundleObjects" data-name="stix2::type::bundleobjects">
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Type/BundleObjects" data-name="stix2::type::bundleobjects">
       <a href="../../STIX2/Type/BundleObjects.html">BundleObjects</a>
       
     </li>
@@ -255,24 +255,36 @@
 <div class="main-content">
 <h1 class="type-name">
 
-  <span class="kind">alias</span> STIX2::Type::BundleObjects
+  <span class="kind">class</span> STIX2::Properties::BasicCommon
 
 </h1>
 
 
-
-
-
-
-
-  <h2>Alias Definition</h2>
-  <code><a href="../../Array.html">Array</a>(<a href="../../STIX2/Properties/BasicCommon.html">STIX2::Properties::BasicCommon</a>)</code>
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../STIX2/Properties/BasicCommon.html">STIX2::Properties::BasicCommon</a></li><li class="superclass"><a href="../../STIX2/Properties/Core.html">STIX2::Properties::Core</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
 
 
 
 
 
 
+
+
+
+
+
+
+  <h2>Direct Known Subclasses</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../../STIX2/DomainName.html">STIX2::DomainName</a></li>
+  
+    <li class="other-type"><a href="../../STIX2/IPv4Addr.html">STIX2::IPv4Addr</a></li>
+  
+    <li class="other-type"><a href="../../STIX2/Properties/Common.html">STIX2::Properties::Common</a></li>
+  
+    <li class="other-type"><a href="../../STIX2/Url.html">STIX2::Url</a></li>
+  
+  </ul>
 
 
 
@@ -282,8 +294,8 @@
   <h2>Defined in:</h2>
   
     
-      <a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/bundle.cr#L12" target="_blank">
-        objects/bundle.cr
+      <a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/properties/basic_common.cr#L4" target="_blank">
+        objects/properties/basic_common.cr
       </a>
     
     <br/>
@@ -293,9 +305,34 @@
 
 
 
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new(pull:JSON::PullParser)-class-method" class="signature"><strong>.new</strong>(pull : JSON::PullParser)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new(object_type:String)-class-method" class="signature"><strong>.new</strong>(object_type : String)</a>
+        
+      </li>
+    
+  </ul>
 
 
 
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#spec_version:String-instance-method" class="signature"><strong>#spec_version</strong> : String</a>
+        
+      </li>
+    
+  </ul>
 
 
 
@@ -303,12 +340,129 @@
 
 <div class="methods-inherited">
   
+    
+
+  <h3>Instance methods inherited from class <code><a href="../../STIX2/Properties/Core.html">STIX2::Properties::Core</a></code></h3>
+  
+  
+    <a href="../../STIX2/Properties/Core.html#id:String-instance-method" class="tooltip">
+      <span>id : String</span>
+    id</a>, 
+    
+  
+    <a href="../../STIX2/Properties/Core.html#object_type:String-instance-method" class="tooltip">
+      <span>object_type : String</span>
+    object_type</a>
+    
+  
+
+
+    
+
+  <h3>Constructor methods inherited from class <code><a href="../../STIX2/Properties/Core.html">STIX2::Properties::Core</a></code></h3>
+  
+  
+    <a href="../../STIX2/Properties/Core.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
+      <span>new(pull : JSON::PullParser)<br/>new(object_type : String)</span>
+    new</a>
+    
+  
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
 </div>
 
 
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(pull:JSON::PullParser)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(pull : JSON::PullParser)
+
+        <a class="method-permalink" href="#new(pull:JSON::PullParser)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/properties/basic_common.cr#L4" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new(object_type:String)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(object_type : String)
+
+        <a class="method-permalink" href="#new(object_type:String)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/properties/basic_common.cr#L7" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
 
 
 
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="spec_version:String-instance-method">
+      <div class="signature">
+        
+        def <strong>spec_version</strong> : String
+
+        <a class="method-permalink" href="#spec_version:String-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/properties/basic_common.cr#L7" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
 
 
 

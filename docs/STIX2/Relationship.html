@@ -136,18 +136,18 @@
       
     </li>
   
-  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/BasicCommonObjectProperties" data-name="stix2::properties::basiccommonobjectproperties">
-      <a href="../STIX2/Properties/BasicCommonObjectProperties.html">BasicCommonObjectProperties</a>
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/BasicCommon" data-name="stix2::properties::basiccommon">
+      <a href="../STIX2/Properties/BasicCommon.html">BasicCommon</a>
       
     </li>
   
-  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/CommonObjectProperties" data-name="stix2::properties::commonobjectproperties">
-      <a href="../STIX2/Properties/CommonObjectProperties.html">CommonObjectProperties</a>
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/Common" data-name="stix2::properties::common">
+      <a href="../STIX2/Properties/Common.html">Common</a>
       
     </li>
   
-  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/CreatedModifiedProperty" data-name="stix2::properties::createdmodifiedproperty">
-      <a href="../STIX2/Properties/CreatedModifiedProperty.html">CreatedModifiedProperty</a>
+  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/Core" data-name="stix2::properties::core">
+      <a href="../STIX2/Properties/Core.html">Core</a>
       
     </li>
   
@@ -158,11 +158,6 @@
   
   <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/ExternalReferencesProperty" data-name="stix2::properties::externalreferencesproperty">
       <a href="../STIX2/Properties/ExternalReferencesProperty.html">ExternalReferencesProperty</a>
-      
-    </li>
-  
-  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/IDProperty" data-name="stix2::properties::idproperty">
-      <a href="../STIX2/Properties/IDProperty.html">IDProperty</a>
       
     </li>
   
@@ -198,11 +193,6 @@
   
   <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/SeenProperties" data-name="stix2::properties::seenproperties">
       <a href="../STIX2/Properties/SeenProperties.html">SeenProperties</a>
-      
-    </li>
-  
-  <li class=" " data-id="github.com/synsec/crystal-stix2/STIX2/Properties/TypeProperty" data-name="stix2::properties::typeproperty">
-      <a href="../STIX2/Properties/TypeProperty.html">TypeProperty</a>
       
     </li>
   
@@ -270,7 +260,7 @@
 </h1>
 
 
-  <ul class="superclass-hierarchy"><li class="superclass"><a href="../STIX2/Relationship.html">STIX2::Relationship</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../STIX2/Relationship.html">STIX2::Relationship</a></li><li class="superclass"><a href="../STIX2/Properties/Common.html">STIX2::Properties::Common</a></li><li class="superclass"><a href="../STIX2/Properties/BasicCommon.html">STIX2::Properties::BasicCommon</a></li><li class="superclass"><a href="../STIX2/Properties/Core.html">STIX2::Properties::Core</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
 
 
 
@@ -281,10 +271,6 @@
 
   <h2>Included Modules</h2>
   <ul class="other-types-list">
-  
-    <li class="other-type">JSON::Serializable</li>
-  
-    <li class="other-type"><a href="../STIX2/Properties/CommonObjectProperties.html">STIX2::Properties::CommonObjectProperties</a></li>
   
     <li class="other-type"><a href="../STIX2/Properties/DescriptionProperty.html">STIX2::Properties::DescriptionProperty</a></li>
   
@@ -302,7 +288,7 @@
   <h2>Defined in:</h2>
   
     
-      <a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L5" target="_blank">
+      <a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L4" target="_blank">
         objects/relationship.cr
       </a>
     
@@ -417,15 +403,6 @@
 
     
 
-  <h3>Constructor methods inherited from module <code><a href="../STIX2/Properties/DescriptionProperty.html">STIX2::Properties::DescriptionProperty</a></code></h3>
-  
-  
-    <a href="../STIX2/Properties/DescriptionProperty.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
-      <span>new(pull : JSON::PullParser)</span>
-    new</a>
-    
-  
-
 
     
 
@@ -433,50 +410,55 @@
   
     
 
-
-    
-
-
-    
-
-
-  
-    
-
-  <h3>Instance methods inherited from module <code><a href="../STIX2/Properties/CommonObjectProperties.html">STIX2::Properties::CommonObjectProperties</a></code></h3>
+  <h3>Instance methods inherited from class <code><a href="../STIX2/Properties/Common.html">STIX2::Properties::Common</a></code></h3>
   
   
-    <a href="../STIX2/Properties/CommonObjectProperties.html#confidence:Int64%7CNil%7CInt32%7CNil-instance-method" class="tooltip">
+    <a href="../STIX2/Properties/Common.html#confidence:Int64%7CNil%7CInt32%7CNil-instance-method" class="tooltip">
       <span>confidence : Int64 | Nil | Int32 | Nil</span>
     confidence</a>, 
     
   
-    <a href="../STIX2/Properties/CommonObjectProperties.html#confidence=(confidence:Int64%7CNil%7CInt32%7CNil)-instance-method" class="tooltip">
+    <a href="../STIX2/Properties/Common.html#confidence=(confidence:Int64%7CNil%7CInt32%7CNil)-instance-method" class="tooltip">
       <span>confidence=(confidence : Int64 | Nil | Int32 | Nil)</span>
     confidence=</a>, 
     
   
-    <a href="../STIX2/Properties/CommonObjectProperties.html#created_by_ref:String?-instance-method" class="tooltip">
+    <a href="../STIX2/Properties/Common.html#created:String-instance-method" class="tooltip">
+      <span>created : String</span>
+    created</a>, 
+    
+  
+    <a href="../STIX2/Properties/Common.html#created=(created:String)-instance-method" class="tooltip">
+      <span>created=(created : String)</span>
+    created=</a>, 
+    
+  
+    <a href="../STIX2/Properties/Common.html#created_by_ref:String?-instance-method" class="tooltip">
       <span>created_by_ref : String?</span>
     created_by_ref</a>, 
     
   
-    <a href="../STIX2/Properties/CommonObjectProperties.html#created_by_ref=(created_by_ref:String?)-instance-method" class="tooltip">
+    <a href="../STIX2/Properties/Common.html#created_by_ref=(created_by_ref:String?)-instance-method" class="tooltip">
       <span>created_by_ref=(created_by_ref : String?)</span>
     created_by_ref=</a>, 
     
   
-    <a href="../STIX2/Properties/CommonObjectProperties.html#init_object(object_type:String)-instance-method" class="tooltip">
-      <span>init_object(object_type : String)</span>
-    init_object</a>, 
+    <a href="../STIX2/Properties/Common.html#modified:String-instance-method" class="tooltip">
+      <span>modified : String</span>
+    modified</a>, 
     
   
-    <a href="../STIX2/Properties/CommonObjectProperties.html#revoked:Bool?-instance-method" class="tooltip">
+    <a href="../STIX2/Properties/Common.html#modified=(modified:String)-instance-method" class="tooltip">
+      <span>modified=(modified : String)</span>
+    modified=</a>, 
+    
+  
+    <a href="../STIX2/Properties/Common.html#revoked:Bool?-instance-method" class="tooltip">
       <span>revoked : Bool?</span>
     revoked</a>, 
     
   
-    <a href="../STIX2/Properties/CommonObjectProperties.html#revoked=(revoked:Bool?)-instance-method" class="tooltip">
+    <a href="../STIX2/Properties/Common.html#revoked=(revoked:Bool?)-instance-method" class="tooltip">
       <span>revoked=(revoked : Bool?)</span>
     revoked=</a>
     
@@ -485,11 +467,11 @@
 
     
 
-  <h3>Constructor methods inherited from module <code><a href="../STIX2/Properties/CommonObjectProperties.html">STIX2::Properties::CommonObjectProperties</a></code></h3>
+  <h3>Constructor methods inherited from class <code><a href="../STIX2/Properties/Common.html">STIX2::Properties::Common</a></code></h3>
   
   
-    <a href="../STIX2/Properties/CommonObjectProperties.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
-      <span>new(pull : JSON::PullParser)</span>
+    <a href="../STIX2/Properties/Common.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
+      <span>new(pull : JSON::PullParser)<br/>new(object_type : String)</span>
     new</a>
     
   
@@ -528,25 +510,6 @@
 
     
 
-  <h3>Constructor methods inherited from module <code><a href="../STIX2/Properties/MarkingProperty.html">STIX2::Properties::MarkingProperty</a></code></h3>
-  
-  
-    <a href="../STIX2/Properties/MarkingProperty.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
-      <span>new(pull : JSON::PullParser)</span>
-    new</a>
-    
-  
-
-
-    
-
-
-  
-    
-
-
-    
-
 
     
 
@@ -581,25 +544,6 @@
 
     
 
-  <h3>Constructor methods inherited from module <code><a href="../STIX2/Properties/LangProperty.html">STIX2::Properties::LangProperty</a></code></h3>
-  
-  
-    <a href="../STIX2/Properties/LangProperty.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
-      <span>new(pull : JSON::PullParser)</span>
-    new</a>
-    
-  
-
-
-    
-
-
-  
-    
-
-
-    
-
 
     
 
@@ -623,88 +567,6 @@
 
 
     
-
-  <h3>Constructor methods inherited from module <code><a href="../STIX2/Properties/ExternalReferencesProperty.html">STIX2::Properties::ExternalReferencesProperty</a></code></h3>
-  
-  
-    <a href="../STIX2/Properties/ExternalReferencesProperty.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
-      <span>new(pull : JSON::PullParser)</span>
-    new</a>
-    
-  
-
-
-    
-
-
-  
-    
-
-
-    
-
-
-    
-
-
-  
-    
-
-
-    
-
-
-    
-
-
-  
-    
-
-  <h3>Instance methods inherited from module <code><a href="../STIX2/Properties/CreatedModifiedProperty.html">STIX2::Properties::CreatedModifiedProperty</a></code></h3>
-  
-  
-    <a href="../STIX2/Properties/CreatedModifiedProperty.html#created:String?-instance-method" class="tooltip">
-      <span>created : String?</span>
-    created</a>, 
-    
-  
-    <a href="../STIX2/Properties/CreatedModifiedProperty.html#created=(created:String?)-instance-method" class="tooltip">
-      <span>created=(created : String?)</span>
-    created=</a>, 
-    
-  
-    <a href="../STIX2/Properties/CreatedModifiedProperty.html#modified:String?-instance-method" class="tooltip">
-      <span>modified : String?</span>
-    modified</a>, 
-    
-  
-    <a href="../STIX2/Properties/CreatedModifiedProperty.html#modified=(modified:String?)-instance-method" class="tooltip">
-      <span>modified=(modified : String?)</span>
-    modified=</a>, 
-    
-  
-    <a href="../STIX2/Properties/CreatedModifiedProperty.html#set_modified_to_created-instance-method" class="tooltip">
-      <span>set_modified_to_created</span>
-    set_modified_to_created</a>, 
-    
-  
-    <a href="../STIX2/Properties/CreatedModifiedProperty.html#set_%D1%81reated_to_current_time-instance-method" class="tooltip">
-      <span>set_сreated_to_current_time</span>
-    set_сreated_to_current_time</a>
-    
-  
-
-
-    
-
-  <h3>Constructor methods inherited from module <code><a href="../STIX2/Properties/CreatedModifiedProperty.html">STIX2::Properties::CreatedModifiedProperty</a></code></h3>
-  
-  
-    <a href="../STIX2/Properties/CreatedModifiedProperty.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
-      <span>new(pull : JSON::PullParser)</span>
-    new</a>
-    
-  
 
 
     
@@ -740,11 +602,40 @@
 
     
 
-  <h3>Constructor methods inherited from module <code><a href="../STIX2/Properties/LabelsProperty.html">STIX2::Properties::LabelsProperty</a></code></h3>
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+  <h3>Instance methods inherited from class <code><a href="../STIX2/Properties/BasicCommon.html">STIX2::Properties::BasicCommon</a></code></h3>
   
   
-    <a href="../STIX2/Properties/LabelsProperty.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
-      <span>new(pull : JSON::PullParser)</span>
+    <a href="../STIX2/Properties/BasicCommon.html#spec_version:String-instance-method" class="tooltip">
+      <span>spec_version : String</span>
+    spec_version</a>
+    
+  
+
+
+    
+
+  <h3>Constructor methods inherited from class <code><a href="../STIX2/Properties/BasicCommon.html">STIX2::Properties::BasicCommon</a></code></h3>
+  
+  
+    <a href="../STIX2/Properties/BasicCommon.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
+      <span>new(pull : JSON::PullParser)<br/>new(object_type : String)</span>
     new</a>
     
   
@@ -756,69 +647,16 @@
   
     
 
-
-    
-
-
-    
-
-
-  
-    
-
-
-    
-
-
-    
-
-
-  
-    
-
-  <h3>Instance methods inherited from module <code><a href="../STIX2/Properties/BasicCommonObjectProperties.html">STIX2::Properties::BasicCommonObjectProperties</a></code></h3>
+  <h3>Instance methods inherited from class <code><a href="../STIX2/Properties/Core.html">STIX2::Properties::Core</a></code></h3>
   
   
-    <a href="../STIX2/Properties/BasicCommonObjectProperties.html#init_basic_object(object_type:String)-instance-method" class="tooltip">
-      <span>init_basic_object(object_type : String)</span>
-    init_basic_object</a>, 
+    <a href="../STIX2/Properties/Core.html#id:String-instance-method" class="tooltip">
+      <span>id : String</span>
+    id</a>, 
     
   
-    <a href="../STIX2/Properties/BasicCommonObjectProperties.html#spec_version:String?-instance-method" class="tooltip">
-      <span>spec_version : String?</span>
-    spec_version</a>, 
-    
-  
-    <a href="../STIX2/Properties/BasicCommonObjectProperties.html#spec_version=(spec_version:String?)-instance-method" class="tooltip">
-      <span>spec_version=(spec_version : String?)</span>
-    spec_version=</a>
-    
-  
-
-
-    
-
-  <h3>Constructor methods inherited from module <code><a href="../STIX2/Properties/BasicCommonObjectProperties.html">STIX2::Properties::BasicCommonObjectProperties</a></code></h3>
-  
-  
-    <a href="../STIX2/Properties/BasicCommonObjectProperties.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
-      <span>new(pull : JSON::PullParser)</span>
-    new</a>
-    
-  
-
-
-    
-
-
-  
-    
-
-  <h3>Instance methods inherited from module <code><a href="../STIX2/Properties/TypeProperty.html">STIX2::Properties::TypeProperty</a></code></h3>
-  
-  
-    <a href="../STIX2/Properties/TypeProperty.html#object_type:String?-instance-method" class="tooltip">
-      <span>object_type : String?</span>
+    <a href="../STIX2/Properties/Core.html#object_type:String-instance-method" class="tooltip">
+      <span>object_type : String</span>
     object_type</a>
     
   
@@ -826,87 +664,14 @@
 
     
 
-  <h3>Constructor methods inherited from module <code><a href="../STIX2/Properties/TypeProperty.html">STIX2::Properties::TypeProperty</a></code></h3>
+  <h3>Constructor methods inherited from class <code><a href="../STIX2/Properties/Core.html">STIX2::Properties::Core</a></code></h3>
   
   
-    <a href="../STIX2/Properties/TypeProperty.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
-      <span>new(pull : JSON::PullParser)</span>
+    <a href="../STIX2/Properties/Core.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
+      <span>new(pull : JSON::PullParser)<br/>new(object_type : String)</span>
     new</a>
     
   
-
-
-    
-
-
-  
-    
-
-
-    
-
-
-    
-
-
-  
-    
-
-  <h3>Instance methods inherited from module <code><a href="../STIX2/Properties/IDProperty.html">STIX2::Properties::IDProperty</a></code></h3>
-  
-  
-    <a href="../STIX2/Properties/IDProperty.html#id:String?-instance-method" class="tooltip">
-      <span>id : String?</span>
-    id</a>, 
-    
-  
-    <a href="../STIX2/Properties/IDProperty.html#new_ID(s:String)-instance-method" class="tooltip">
-      <span>new_ID(s : String)</span>
-    new_ID</a>
-    
-  
-
-
-    
-
-  <h3>Constructor methods inherited from module <code><a href="../STIX2/Properties/IDProperty.html">STIX2::Properties::IDProperty</a></code></h3>
-  
-  
-    <a href="../STIX2/Properties/IDProperty.html#new(pull:JSON::PullParser)-class-method" class="tooltip">
-      <span>new(pull : JSON::PullParser)</span>
-    new</a>
-    
-  
-
-
-    
-
-
-  
-    
-
-
-    
-
-
-    
-
-
-  
-    
-
-
-    
-
-
-    
-
-
-  
-    
-
-
-    
 
 
     
@@ -959,7 +724,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L16" target="_blank">View source</a>]
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L13" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -975,7 +740,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L6" target="_blank">View source</a>]
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L4" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -991,7 +756,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L20" target="_blank">View source</a>]
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L17" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1014,7 +779,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L9" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1030,7 +795,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L16" target="_blank">View source</a>]
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L13" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1046,7 +811,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L13" target="_blank">View source</a>]
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L10" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1062,7 +827,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L17" target="_blank">View source</a>]
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L14" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1078,7 +843,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L15" target="_blank">View source</a>]
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1094,7 +859,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L19" target="_blank">View source</a>]
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L16" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1110,7 +875,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L16" target="_blank">View source</a>]
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L13" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1126,7 +891,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L20" target="_blank">View source</a>]
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L17" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1142,7 +907,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L14" target="_blank">View source</a>]
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L11" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1158,7 +923,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/synsec/crystal-stix2/blob/59b4c04c49ac64b7fa4026900f5a15791bbeb5d3/src/objects/relationship.cr#L18" target="_blank">View source</a>]
+          [<a href="https://github.com/synsec/crystal-stix2/blob/90431bf9ce0773ed63a0fca51174d804c07d8bad/src/objects/relationship.cr#L15" target="_blank">View source</a>]
         
       </div>
     </div>

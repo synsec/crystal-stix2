@@ -1,3 +1,5 @@
+require "../spec_helper"
+
 describe STIX2::Relationship do
   relationship_type = "resolves-to"
   source_ref = "domain-name--3c10e93f-798e-5a26-a0c1-08156efab7f5"
@@ -21,11 +23,11 @@ describe STIX2::Relationship do
   describe "Required Common Properties" do
     it "Should have correct created and modified" do
       obj.created.should_not be_nil
-      obj.created.to_s.should_not be_empty
+      obj.created.should_not be_empty
       obj.created.class.should eq String
 
       obj.modified.should_not be_nil
-      obj.modified.to_s.should_not be_empty
+      obj.modified.should_not be_empty
       obj.modified.class.should eq String
     end
 

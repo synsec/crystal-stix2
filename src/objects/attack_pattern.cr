@@ -1,12 +1,9 @@
-require "json"
-require "./properties/common_object_properties"
+require "./properties/common"
 require "./properties/description"
 require "./properties/aliases"
 require "./properties/kill_chain_phases"
 
-class STIX2::AttackPattern
-  include JSON::Serializable
-  include STIX2::Properties::CommonObjectProperties
+class STIX2::AttackPattern < STIX2::Properties::Common
   include STIX2::Properties::DescriptionProperty
   include STIX2::Properties::AliasesProperty
   include STIX2::Properties::KillChainPhasesProperty
@@ -14,11 +11,11 @@ class STIX2::AttackPattern
   property name : String
 
   def initialize(@name : String)
-    init_object("attack-pattern")
+    super("attack-pattern")
   end
 
   def initialize(args : NamedTuple(name: String))
     @name = args[:name]
-    init_object("attack-pattern")
+    super("attack-pattern")
   end
 end

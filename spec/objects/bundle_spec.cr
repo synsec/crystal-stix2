@@ -1,3 +1,5 @@
+require "../spec_helper"
+
 describe STIX2::Bundle do
   bundle = STIX2::Bundle.new
 
@@ -39,8 +41,8 @@ describe STIX2::Bundle do
     })
 
     relationship_type = "resolves-to"
-    source_ref = domain_name.id.to_s
-    target_ref = ipv4_addr.id.to_s
+    source_ref = domain_name.id
+    target_ref = ipv4_addr.id
     relationship = STIX2::Relationship.new({
       relationship_type: relationship_type,
       source_ref:        source_ref,

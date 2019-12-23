@@ -1,4 +1,3 @@
-
 require "./properties/common"
 require "./properties/description"
 require "./properties/kill_chain_phases"

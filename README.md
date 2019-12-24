@@ -1,6 +1,6 @@
 # crystal-stix2
 
-![](https://github.com/synsec/crystal-stix2/workflows/Crystal%20CI/badge.svg?branch=master)
+![](https://github.com/synsec/crystal-stix2/workflows/Crystal%20CI/badge.svg?branch=release%2F0.1.1)
 [![](https://img.shields.io/badge/cryatsl--stix2-docs-brightgreen)](https://synsec.github.io/crystal-stix2/)
 
 crystal-stix2 is a STIX 2.1 implementation using Crystal language. This is a work in progress and API is likely to change.
